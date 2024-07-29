@@ -1,7 +1,8 @@
-query user {
-    user(id: 1) {
-        id
-        username
-        email
+query myQuery {
+    aUnion {
+        __typename
+        ... on FirstUnionType {
+            age
+        }
     }
 }
