@@ -11,7 +11,7 @@ type SecondUnionType {
     email: String!
 }
 
-union FirstOrSecondUnionType = FirstUnionType | SecondUnionType;
+union FirstOrSecondUnionType = FirstUnionType | SecondUnionType
 
 interface MyInterface {
     weight: Int!
