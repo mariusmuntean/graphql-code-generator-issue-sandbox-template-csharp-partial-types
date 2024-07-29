@@ -2,7 +2,7 @@
 
 You can use this repo in order to quickly create a template for reproducing issues related to `graphql-code-generator`. 
 
-Use the following link: https://codesandbox.io/s/github/dotansimha/graphql-code-generator-issue-sandbox-template 
+Use the following link: https://codesandbox.io/s/github/mariusmuntean/graphql-code-generator-issue-sandbox-template-csharp-partial-types
 
 * `document.graphql` - your GraphQL operations - queries, mutations, subscritpions and fragments.
 * `schema.graphql` - your GraphQL schema.
