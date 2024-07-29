@@ -1,9 +1,28 @@
 type Query {
-    user(id: ID!): User!
+    aUnion: FirstOrSecondUnionType!
+    aInterface: MyInterface!
 }
 
-type User {
-    id: ID!
-    username: String!
+type FirstUnionType {
+    age: Int!
+}
+
+type SecondUnionType {
     email: String!
+}
+
+union FirstOrSecondUnionType = FirstUnionType | SecondUnionType;
+
+interface MyInterface {
+    weight: Int!
+}
+
+type FirstInterfaceType implements MyInterface {
+    weight: Int!
+    volume: Int!
+}
+
+type SecondInterfaceType implements MyInterface {
+    weight: Int!
+    density: Int!
 }
